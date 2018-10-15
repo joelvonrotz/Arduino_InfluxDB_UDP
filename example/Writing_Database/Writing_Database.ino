@@ -39,7 +39,7 @@ void setup()
 void loop()
 {
     delay(1000);
-    data.clearField();
+    data.clear(InfluxDB_Data::FIELD);
     data.addField("data",String(random(10)));
     influx.write(data);
 }

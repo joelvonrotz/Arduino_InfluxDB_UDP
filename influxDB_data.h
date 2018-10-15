@@ -4,6 +4,12 @@ class InfluxDB_Data {
   public:
     InfluxDB_Data(String measurement) : m_measurement(measurement) {}
 
+    enum InfluxDB_ClearType{
+        FIELD = 0,
+        TAG,
+        ALL,
+    };
+
     void addTag(String tag_key, String tag_value)
     {
         m_tag += ",";        
@@ -29,10 +35,16 @@ class InfluxDB_Data {
         addField(field_key, String(field_value));
     }
 
-    void clearField()
+    void clear(InfluxDB_ClearType clear_type)
     {
-        
-        m_field       = "";
+        if(clear_type == FIELD || clear_type == ALL)
+        {
+            m_field = "";
+        }
+        if(clear_type == TAG || clear_type == ALL)
+        {
+            m_tag = "";
+        }
     }
 
     String  toString()
