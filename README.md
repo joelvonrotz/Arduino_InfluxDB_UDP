@@ -40,7 +40,7 @@ void loop()
 InfluxDB_UDP( WiFiUDP &udp, String host_ip, uint16_t port )
 ```
 
-Constructor for creating InfluxDB-UDP instances. Requires an object from the ```WiFiUdp``` Arduino-library, the ip-address and the port number of the Influx host.
+Constructor for creating InfluxDB-UDP instances. Requires an object from the ```WiFiUdp``` Arduino-library, the IP-address and the port number of the Influx host.
 
 ```cpp
 bool write( InfluxDB_Data data_package )
