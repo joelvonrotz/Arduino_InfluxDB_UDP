@@ -6,18 +6,18 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-InfluxDB_UDP    KEYWORD1
-InfluxDB_Data   KEYWORD1
+InfluxDB_UDP	KEYWORD1
+InfluxDB_Data	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-addTag	    KEYWORD2
+addTag	KEYWORD2
 addField	KEYWORD2
-clear	    KEYWORD2
-toString    KEYWORD2
-write       KEYWORD2
+clear	KEYWORD2
+toString	KEYWORD2
+write	KEYWORD2
 
 
 #######################################
