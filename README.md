@@ -12,7 +12,7 @@ The library has two classes: the first one ```InfluxDB_UDP``` requires a UDP-obj
 WiFiUDP         udp;
 
 InfluxDB_UDP    influx(udp, "IP_ADDRESS",PORT_NUMBER);
-InfluxDB_Data   influx_data("NAME_OF_MEASUREMENT");
+InfluxDB_Data   data("NAME_OF_MEASUREMENT");
 
 void setup()
 {
